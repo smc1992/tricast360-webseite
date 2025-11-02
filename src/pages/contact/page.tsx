@@ -387,7 +387,7 @@ const ContactPage = () => {
               <button 
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full md:w-auto md:px-12 py-6 mx-auto rounded-xl text-2xl font-semibold hover:bg-[#a8e63a] transition-all duration-300 shadow-lg shadow-[#baf742]/20 hover:shadow-xl hover:shadow-[#baf742]/30 cursor-pointer whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed bg-[#baf742] text-[#0a0c14] block"
+                className="w-auto max-w-[280px] sm:max-w-xs px-8 sm:px-8 md:px-12 py-6 mx-auto rounded-xl text-xl sm:text-2xl font-semibold hover:bg-[#a8e63a] transition-all duration-300 shadow-lg shadow-[#baf742]/20 hover:shadow-xl hover:shadow-[#baf742]/30 cursor-pointer whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed bg-[#baf742] text-[#0a0c14]"
               >
                 {isSubmitting ? 'Wird gesendet...' : 'Projekt anfragen'}
               </button>
