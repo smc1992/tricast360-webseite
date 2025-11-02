@@ -91,10 +91,10 @@ export default function HeroSection() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <a
-              href="/shop"
+              href="/kontakt"
               className="group px-8 py-4 bg-[#baf742] text-[#0a0c14] rounded-lg font-bold text-lg hover:bg-[#a8e63a] transition-all duration-300 cursor-pointer whitespace-nowrap shadow-lg shadow-[#baf742]/20 hover:shadow-xl hover:shadow-[#baf742]/30 hover:scale-105 backdrop-blur-sm"
             >
-              Jetzt konfigurieren
+              Jetzt anfragen
               <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform duration-300"></i>
             </a>
             <a
