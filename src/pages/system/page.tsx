@@ -505,7 +505,7 @@ const SystemPage = () => {
               </div>
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-[#0E1C3D] mb-8">Praxiserprobt</h3>
               <p className="text-[#0E1C3D]/70 text-2xl">
-                Erfolgreich getestet in über 500 Bauprojekten europaweit
+                Von Behörden abgenommen und erfolgreich in Praxistests bewährt
               </p>
             </div>
           </div>

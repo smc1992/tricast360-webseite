@@ -65,20 +65,15 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
         
-          </div>
-
           {/* Main Heading - Three.js Animated with Enhanced Fallback */}
           <div className="relative mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s', height: '200px', width: '100%' }}>
             <Suspense fallback={
               <div className="flex flex-col items-center justify-center h-full space-y-4">
                 {/* Single line with floating animation */}
                 <div className="animate-pulse-slow">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                     <span className="drop-shadow-lg">
-                      SCHÜTZT<sup className="-mt-2">®</sup>
-                    </span>
-                    <span className="ml-4 text-[#baf742] drop-shadow-lg">
-                      BÄUME
+                      SCHÜTZT <span className="text-[#baf742]">BÄUME</span>, SCHÜTZT <span className="text-[#baf742]">WERTE</span>
                     </span>
                   </h1>
                 </div>
@@ -118,7 +113,7 @@ export default function HeroSection() {
             </div>
             <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-[#baf742]/30 transition-all duration-300">
               <div className="text-3xl font-bold text-[#baf742] mb-1 drop-shadow-lg">100%</div>
-              <div className="text-sm text-gray-400">Wiederverwendbar</div>
+              <div className="text-sm text-gray-400">Wieder<br className="sm:hidden" />verwendbar</div>
             </div>
             <div className="text-center bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-[#baf742]/30 transition-all duration-300">
               <div className="text-3xl font-bold text-[#baf742] mb-1 drop-shadow-lg">DIN</div>

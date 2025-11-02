@@ -61,7 +61,7 @@ export const HighlightsSection = () => {
               </span>
             </h2>
 
-            <p className="text-[#0E1C3D]/70 font-medium text-sm lg:text-lg mb-5 lg:mb-8 leading-relaxed text-center lg:text-justify">
+            <p className="text-[#0E1C3D]/70 font-medium text-sm lg:text-lg mb-5 lg:mb-8 leading-relaxed text-left lg:text-justify">
               Entdecken Sie die wichtigsten Vorteile unseres innovativen TRICAST360® Systems. Von blitzschneller Installation bis hin zu 100% nachhaltiger Produktion - erleben Sie, wie wir den Baumschutz revolutionieren und dabei die Umwelt schützen.
             </p>
 

@@ -121,9 +121,9 @@ function Scene() {
       {/* Animated background particles - disabled */}
       <Particles />
 
-      {/* First line: TRICAST360® */}
+      {/* First line: SCHÜTZT BÄUME, SCHÜTZT WERTE */}
       <AnimatedText
-        text="TRICAST360® Baumschutz"
+        text="SCHÜTZT BÄUME, SCHÜTZT WERTE"
         position={[0, 0, 0]}
         fontSize={1.2}
         color="#ffffff"

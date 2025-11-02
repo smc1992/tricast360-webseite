@@ -310,7 +310,7 @@ const HomePage = () => {
                   <div>
                     <h3 className="text-white font-semibold mb-1">Praxiserprobt</h3>
                     <p className="text-white/60 text-sm leading-relaxed">
-                      Erfolgreich getestet in über 500 Bauprojekten europaweit und bewährt seit 2020.
+                      Von Behörden abgenommen und erfolgreich in Praxistests bewährt
                     </p>
                   </div>
                 </div>

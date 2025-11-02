@@ -251,7 +251,7 @@ const ContactPage = () => {
               <i className="ri-mail-line text-[#baf742] text-xl"></i>
               <span className="text-[#baf742] font-semibold text-lg">Projekt anfragen</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0E1C3D] mb-8 leading-tight">Projekt anfragen</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#0E1C3D] mb-8 leading-tight">Projekt anfragen</h2>
             <p className="text-2xl sm:text-3xl text-[#0E1C3D]/80 leading-relaxed">
               Wir melden uns innerhalb von 24 Stunden bei Ihnen
             </p>

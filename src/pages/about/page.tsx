@@ -260,24 +260,24 @@ const AboutPage = () => {
             <p className="text-2xl sm:text-3xl md:text-4xl text-white/80 mb-16 leading-relaxed max-w-5xl mx-auto">
               Wir revolutionieren den Baumschutz mit nachhaltigen, innovativen Lösungen für eine grünere Zukunft
             </p>
-            <div className="flex flex-wrap justify-center gap-10">
-              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-10 py-5 rounded-full shadow-lg border border-white/10">
-                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
+              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-6 sm:px-10 py-5 rounded-full shadow-lg border border-white/10 min-w-[200px] sm:min-w-[250px] justify-center">
+                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center flex-shrink-0">
                   <i className="ri-time-line text-[#0a0c14] text-2xl"></i>
                 </div>
-                <span className="text-white font-semibold text-xl">&lt;5min Installation</span>
+                <span className="text-white font-semibold text-lg sm:text-xl">&lt;5min Installation</span>
               </div>
-              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-10 py-5 rounded-full shadow-lg border border-white/10">
-                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center">
+              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-6 sm:px-10 py-5 rounded-full shadow-lg border border-white/10 min-w-[200px] sm:min-w-[250px] justify-center">
+                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center flex-shrink-0">
                   <i className="ri-leaf-line text-[#0a0c14] text-2xl"></i>
                 </div>
-                <span className="text-white font-semibold text-xl">100% Nachhaltig</span>
+                <span className="text-white font-semibold text-lg sm:text-xl">100% Nachhaltig</span>
               </div>
-              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-10 py-5 rounded-full shadow-lg border border-white/10">
-                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center">
+              <div className="flex items-center gap-5 bg-white/10 backdrop-blur-sm px-6 sm:px-10 py-5 rounded-full shadow-lg border border-white/10 min-w-[200px] sm:min-w-[250px] justify-center">
+                <div className="w-12 h-12 bg-[#baf742] rounded-full flex items-center justify-center flex-shrink-0">
                   <i className="ri-recycle-line text-[#0a0c14] text-2xl"></i>
                 </div>
-                <span className="text-white font-semibold text-xl">Wiederverwendbar</span>
+                <span className="text-white font-semibold text-lg sm:text-xl">Wiederverwendbar</span>
               </div>
             </div>
           </div>
