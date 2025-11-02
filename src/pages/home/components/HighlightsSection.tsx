@@ -45,7 +45,7 @@ export const HighlightsSection = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 bg-[#0E1C3D]/5 backdrop-blur-[30px] rounded-[20px] w-full max-w-[900px] lg:max-w-[1200px] shadow-[0_0.5px_0_1px_rgba(14,28,61,0.23)_inset,0_1px_0_0_rgba(14,28,61,0.66)_inset,0_4px_16px_rgba(0,0,0,0.12)] z-10 mx-4">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 bg-[#0E1C3D]/5 backdrop-blur-[30px] rounded-[20px] w-full max-w-[900px] lg:max-w-[1200px] shadow-[0_0.5px_0_1px_rgba(14,28,61,0.23)_inset,0_1px_0_0_rgba(14,28,61,0.66)_inset,0_4px_16px_rgba(0,0,0,0.12)] z-10 mx-auto">
           
           {/* Text Content */}
           <div className="flex flex-col justify-center items-center max-w-[450px] lg:max-w-[550px] px-6 lg:px-12 py-8 lg:py-16 text-justify order-2 lg:order-1">

@@ -400,7 +400,7 @@ const AboutPage = () => {
                   Wir glauben daran, dass Umweltschutz und wirtschaftlicher Erfolg Hand in Hand gehen können. Deshalb haben wir ein System entwickelt, das nicht nur die Umwelt schont, sondern auch Kosten spart.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-10 mt-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
                 {/* Schutz Card - Enhanced */}
                 <div className="group text-center p-12 bg-gradient-to-br from-[#f8fdf8] to-white rounded-3xl border border-[#baf742]/20 hover:border-[#baf742]/40 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl cursor-pointer">
                   <div className="relative inline-block mb-8">

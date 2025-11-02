@@ -64,11 +64,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          {/* Badge */}
-          <div className="inline-block mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <span className="px-4 py-2 bg-[#baf742]/10 border border-[#baf742]/30 rounded-full text-[#baf742] text-sm font-semibold backdrop-blur-sm shadow-lg">
-              Innovation im Baumschutz
-            </span>
+        
           </div>
 
           {/* Main Heading - Three.js Animated with Enhanced Fallback */}
@@ -77,12 +73,12 @@ export default function HeroSection() {
               <div className="flex flex-col items-center justify-center h-full space-y-4">
                 {/* Single line with floating animation */}
                 <div className="animate-pulse-slow">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                     <span className="drop-shadow-lg">
-                      TRICAST360<sup className="-mt-2">®</sup>
+                      SCHÜTZT<sup className="-mt-2">®</sup>
                     </span>
                     <span className="ml-4 text-[#baf742] drop-shadow-lg">
-                      Baumschutz
+                      BÄUME
                     </span>
                   </h1>
                 </div>
