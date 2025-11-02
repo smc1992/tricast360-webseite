@@ -1,6 +1,5 @@
 
 import { useState, useEffect, useRef } from 'react';
-import { SEOHead, pageSEO } from '../../components/SEOHead';
 
 const SystemPage = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
@@ -110,7 +109,6 @@ const SystemPage = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0c14]">
-      <SEOHead {...pageSEO.system} />
       {/* Header - Same as HomePage */}
       <header className="bg-[#0a0c14]/95 backdrop-blur-md shadow-lg border-b border-white/5 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

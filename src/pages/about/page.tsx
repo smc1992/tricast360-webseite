@@ -1,7 +1,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { AnimatedCard } from '../../components/AnimatedCard';
-import { SEOHead, pageSEO } from '../../components/SEOHead';
 
 const AboutPage = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
@@ -125,7 +124,6 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <SEOHead {...pageSEO.about} />
       {/* Header - Same as HomePage but with dark background */}
       <header className="bg-[#0a0c14]/95 backdrop-blur-md shadow-lg border-b border-white/5 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
