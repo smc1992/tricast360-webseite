@@ -6,7 +6,12 @@ const path = require('path');
 const rateLimit = require('express-rate-limit');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
+
+if (!PORT) {
+  console.error('❌ PORT Umgebungsvariable ist nicht gesetzt!');
+  process.exit(1);
+}
 
 // Middleware
 app.use(cors());
