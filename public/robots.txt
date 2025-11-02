@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /ueber-uns
+Allow: /kontakt
+Allow: /system
+Allow: /shop
+Allow: /warenkorb
+Allow: /impressum
+Allow: /datenschutz
+
+Sitemap: https://tricast360.de/sitemap.xml

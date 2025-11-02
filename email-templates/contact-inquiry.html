@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue Kontakt-Anfrage - TRICAST360</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            margin: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0a0c14 0%, #1a1d2e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.8;
+            margin: 0;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #0E1C3D;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .value {
+            font-size: 16px;
+            color: #333;
+            margin: 0;
+            background-color: #f8fdf8;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 4px solid #baf742;
+        }
+        .message-box {
+            background-color: #f8fdf8;
+            border: 1px solid #e8f5e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .message-label {
+            font-weight: bold;
+            color: #0E1C3D;
+            margin-bottom: 10px;
+        }
+        .message-content {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            color: #555;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        .footer-text {
+            color: #666;
+            font-size: 12px;
+            margin: 0;
+        }
+        .highlight {
+            color: #baf742;
+            font-weight: bold;
+        }
+        .urgent-badge {
+            display: inline-block;
+            background-color: #baf742;
+            color: #0E1C3D;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">TRICAST360<sup>®</sup></div>
+            <p class="subtitle">Neue Kontakt-Anfrage eingegangen</p>
+        </div>
+
+        <div class="content">
+            <div class="urgent-badge">Neue Anfrage</div>
+
+            <div class="section">
+                <div class="label">Anfrage-Typ</div>
+                <div class="value">{{FORM_TYPE}}</div>
+            </div>
+
+            <div class="section">
+                <div class="label">Unternehmen</div>
+                <div class="value">{{COMPANY}}</div>
+            </div>
+
+            <div class="section">
+                <div class="label">Ansprechpartner</div>
+                <div class="value">{{CONTACT_PERSON}}</div>
+            </div>
+
+            <div class="section">
+                <div class="label">E-Mail-Adresse</div>
+                <div class="value">{{EMAIL}}</div>
+            </div>
+
+            <div class="section">
+                <div class="label">Telefon</div>
+                <div class="value">{{PHONE}}</div>
+            </div>
+
+            <div class="section">
+                <div class="message-box">
+                    <div class="message-label">Nachricht / Projektbeschreibung:</div>
+                    <div class="message-content">{{MESSAGE}}</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="label">Eingangsdatum</div>
+                <div class="value">{{DATE}}</div>
+            </div>
+
+            <div class="section">
+                <div class="label">IP-Adresse</div>
+                <div class="value">{{IP_ADDRESS}}</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer-text">
+                Diese E-Mail wurde automatisch von der TRICAST360-Website generiert.<br>
+                <span class="highlight">Bitte antworten Sie innerhalb von 24 Stunden auf diese Anfrage.</span><br>
+                © {{YEAR}} TRICAST360. Alle Rechte vorbehalten.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
