@@ -1,6 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { AnimatedCard } from '../../components/AnimatedCard';
+import { SEOHead, pageSEO } from '../../components/SEOHead';
 
 const AboutPage = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
@@ -124,6 +125,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead {...pageSEO.about} />
       {/* Header - Same as HomePage but with dark background */}
       <header className="bg-[#0a0c14]/95 backdrop-blur-md shadow-lg border-b border-white/5 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -133,7 +135,7 @@ const AboutPage = () => {
               <a href="/" className="flex items-center">
                 <img
                   src="/Logo Tricast360 white.webp"
-                  alt="TriCast360 Logo"
+                  alt="TRICAST360 Logo - Revolutionärer Baumschutz für Bäume und Werte"
                   className="h-12 w-auto"
                 />
               </a>
@@ -488,7 +490,7 @@ const AboutPage = () => {
               <div className="relative h-[500px]">
                 <img 
                   src="/Galip Alkan Profilbild.webp"
-                  alt="Galip Alkan"
+                  alt="Galip Alkan - Geschäftsführer und Gründer von TRICAST360, Experte für nachhaltigen Baumschutz"
                   className="w-full h-full object-cover object-[15%_30%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -511,7 +513,7 @@ const AboutPage = () => {
               <div className="relative h-[500px]">
                 <img 
                   src="/Rifat Acar - Profilbild.webp"
-                  alt="Rifat Acar"
+                  alt="Rifat Acar - Nachhaltigkeitsexperte bei TRICAST360, Spezialist für umweltfreundliche Baumschutzsysteme"
                   className="w-full h-full object-cover object-[45%_center]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>

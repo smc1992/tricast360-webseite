@@ -1,5 +1,6 @@
 
 import { useState, useEffect, useRef } from 'react';
+import { SEOHead, pageSEO } from '../../components/SEOHead';
 
 const SystemPage = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false);
@@ -109,6 +110,7 @@ const SystemPage = () => {
 
   return (
     <div className="min-h-screen bg-[#0a0c14]">
+      <SEOHead {...pageSEO.system} />
       {/* Header - Same as HomePage */}
       <header className="bg-[#0a0c14]/95 backdrop-blur-md shadow-lg border-b border-white/5 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,7 +120,7 @@ const SystemPage = () => {
               <a href="/" className="flex items-center">
                 <img
                   src="/Logo Tricast360 white.webp"
-                  alt="TriCast360 Logo"
+                  alt="TRICAST360 Logo - Revolutionärer Baumschutz für Bäume und Werte"
                   className="h-12 w-auto"
                 />
               </a>
@@ -307,7 +309,7 @@ const SystemPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#baf742]/20 to-transparent rounded-3xl blur-3xl animate-pulse-slow"></div>
               <img
                 src="/tricast360 baumschutzmodul baustelle.webp"
-                alt="TriCast360 System Übersicht"
+                alt="TRICAST360 Baumschutzmodul im praktischen Einsatz auf einer Stadtbaustelle - Demonstration des 360° Rundumschutzes"
                 className="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] lg:h-[600px] border border-[#baf742]/10 transform hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute -bottom-10 -left-10 bg-[#baf742] p-8 rounded-3xl shadow-2xl animate-float-1">
@@ -526,7 +528,7 @@ const SystemPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#baf742]/15 to-transparent rounded-3xl blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
               <img 
                 src="/tricast 360 baumschutzmodul baustelle 2.webp"
-                alt="Technische Details"
+                alt="TRICAST360 Baumschutzsystem Installation - Einfache werkzeuglose Montage mit Klick-Verbindungen"
                 className="relative rounded-3xl shadow-2xl object-cover w-full h-[500px] lg:h-[600px] border border-[#baf742]/10 transform hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute -bottom-10 -right-10 bg-[#baf742] p-8 rounded-3xl shadow-2xl animate-float-2" style={{ animationDelay: '0.5s' }}>
