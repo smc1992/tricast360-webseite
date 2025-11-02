@@ -497,10 +497,10 @@ const ContactPage = () => {
           <div className="text-center mb-24">
             <div className="inline-flex items-center gap-3 bg-[#baf742]/10 backdrop-blur-sm px-6 py-3 rounded-full border border-[#baf742]/20 mb-8">
               <i className="ri-star-line text-[#baf742] text-xl"></i>
-              <span className="text-[#baf742] font-semibold text-lg">Warum TRICAST360<sup>®</sup></span>
+              <span className="text-[#baf742] font-semibold text-lg">Warum TRICAST360<sup className="-mt-2">®</sup></span>
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0E1C3D] mb-10 leading-tight">
-              Warum TRICAST360<sup>®</sup>?
+              Warum TRICAST360<sup className="-mt-2">®</sup>?
             </h2>
           </div>
 
@@ -571,7 +571,7 @@ const ContactPage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

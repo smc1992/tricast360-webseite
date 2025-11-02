@@ -79,7 +79,7 @@ export default function HeroSection() {
                 <div className="animate-pulse-slow">
                   <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
                     <span className="drop-shadow-lg">
-                      TRICAST360<sup>®</sup>
+                      TRICAST360<sup className="-mt-2">®</sup>
                     </span>
                     <span className="ml-4 text-[#baf742] drop-shadow-lg">
                       Baumschutz

@@ -546,7 +546,7 @@ const HomePage = () => {
               Baumschutz neu gedacht: Nachhaltig, effizient und zukunftsorientiert
             </h2>
             <p className="text-xl text-[#0E1C3D]/60 mb-12 leading-relaxed">
-              TRICAST360<sup>®</sup> revolutioniert den Baumschutz auf Baustellen durch innovative Technologie 
+              TRICAST360<sup className="-mt-2">®</sup> revolutioniert den Baumschutz auf Baustellen durch innovative Technologie 
               und nachhaltiges Design. Unser modulares System schützt nicht nur Bäume, sondern auch die Umwelt und Ihr Budget.
             </p>
             
@@ -619,7 +619,7 @@ const HomePage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

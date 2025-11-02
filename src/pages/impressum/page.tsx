@@ -360,7 +360,7 @@ const ImpressumPage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

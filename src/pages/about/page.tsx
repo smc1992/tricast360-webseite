@@ -255,7 +255,7 @@ const AboutPage = () => {
               <span className="text-[#baf742] font-semibold text-lg">Unser Team</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-10 leading-tight">
-              Über <span className="text-[#baf742]">TRICAST360<sup>®</sup></span>
+              Über <span className="text-[#baf742]">TRICAST360<sup className="-mt-2">®</sup></span>
             </h1>
             <p className="text-2xl sm:text-3xl md:text-4xl text-white/80 mb-16 leading-relaxed max-w-5xl mx-auto">
               Wir revolutionieren den Baumschutz mit nachhaltigen, innovativen Lösungen für eine grünere Zukunft
@@ -288,7 +288,7 @@ const AboutPage = () => {
       <section className="py-32 lg:py-48 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">Warum TRICAST360<sup>®</sup>?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">Warum TRICAST360<sup className="-mt-2">®</sup>?</h2>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-16 lg:gap-20">
@@ -474,7 +474,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
             <h2 className="text-5xl md:text-6xl font-bold text-[#0E1C3D] mb-10 leading-tight">
-              Die Köpfe hinter TRICAST360<sup>®</sup>
+              Die Köpfe hinter TRICAST360<sup className="-mt-2">®</sup>
             </h2>
             <p className="text-2xl text-[#0E1C3D]/80 max-w-5xl mx-auto leading-relaxed">
               Ein erfahrenes Team aus Experten verschiedener Bereiche arbeitet gemeinsam an innovativen Lösungen für nachhaltigen Baumschutz
@@ -497,7 +497,7 @@ const AboutPage = () => {
                 <h3 className="text-3xl font-bold text-[#0E1C3D] mb-4">Galip Alkan</h3>
                 <p className="text-[#baf742] font-semibold mb-6 text-xl">Geschäftsführer</p>
                 <p className="text-[#0E1C3D]/80 mb-8 leading-relaxed text-lg">
-                  Als Gründer und Geschäftsführer von TRICAST360<sup>®</sup> bringe ich meine Vision einer nachhaltigen Zukunft in die Baubranche ein.
+                  Als Gründer und Geschäftsführer von TRICAST360<sup className="-mt-2">®</sup> bringe ich meine Vision einer nachhaltigen Zukunft in die Baubranche ein.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-[#baf742]/10 text-[#0E1C3D] px-4 py-2 rounded-full text-sm font-semibold border border-[#baf742]/20 hover:bg-[#baf742]/20 transition-colors cursor-pointer">Produktentwicklung</span>
@@ -760,7 +760,7 @@ const AboutPage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

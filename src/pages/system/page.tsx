@@ -239,7 +239,7 @@ const SystemPage = () => {
               <span className="text-[#baf742] font-semibold text-lg">Unser System</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-10 leading-tight">
-              Das <span className="text-[#baf742]">TRICAST360<sup>®</sup></span> System
+              Das <span className="text-[#baf742]">TRICAST360<sup className="-mt-2">®</sup></span> System
             </h1>
             <p className="text-2xl sm:text-3xl md:text-4xl text-white/80 mb-16 leading-relaxed max-w-5xl mx-auto">
               Revolutionärer 360°-Baumschutz mit modularer Klick-Technologie
@@ -288,7 +288,7 @@ const SystemPage = () => {
                 Innovation trifft<br />Nachhaltigkeit
               </h3>
               <p className="text-2xl lg:text-3xl text-[#0E1C3D]/80 mb-16 leading-relaxed">
-                Das TRICAST360<sup>®</sup>-System revolutioniert den Baumschutz durch intelligente Modularität und nachhaltige Materialien. Entwickelt für die Anforderungen moderner Baustellen.
+                Das TRICAST360<sup className="-mt-2">®</sup>-System revolutioniert den Baumschutz durch intelligente Modularität und nachhaltige Materialien. Entwickelt für die Anforderungen moderner Baustellen.
               </p>
 
               <div className="grid grid-cols-2 gap-16">
@@ -331,7 +331,7 @@ const SystemPage = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">TRICAST360<sup>®</sup> System</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">TRICAST360<sup className="-mt-2">®</sup> System</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-16 lg:gap-20">
@@ -460,7 +460,7 @@ const SystemPage = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">Warum TRICAST360<sup>®</sup>?</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#0E1C3D] mb-8">Warum TRICAST360<sup className="-mt-2">®</sup>?</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-16 lg:gap-20">
@@ -542,7 +542,7 @@ const SystemPage = () => {
                 Einfache Installation
               </h2>
               <p className="text-2xl lg:text-3xl text-[#0E1C3D]/80 mb-16">
-                Das TRICAST360<sup>®</sup>-System ist so konzipiert, dass es ohne Spezialwerkzeug oder Fachkenntnisse installiert werden kann.
+                Das TRICAST360<sup className="-mt-2">®</sup>-System ist so konzipiert, dass es ohne Spezialwerkzeug oder Fachkenntnisse installiert werden kann.
               </p>
 
               <div className="space-y-12">
@@ -604,7 +604,7 @@ const SystemPage = () => {
             Bereit für Ihr Projekt?
           </h2>
           <p className="text-2xl lg:text-3xl text-white/80 mb-16 max-w-4xl mx-auto">
-            Entdecken Sie die Vorteile des TRICAST360<sup>®</sup>-Systems für Ihr nächstes Bauprojekt. Kostenlose Beratung und individuelles Angebot.
+            Entdecken Sie die Vorteile des TRICAST360<sup className="-mt-2">®</sup>-Systems für Ihr nächstes Bauprojekt. Kostenlose Beratung und individuelles Angebot.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
@@ -663,7 +663,7 @@ const SystemPage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>

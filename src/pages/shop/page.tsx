@@ -411,7 +411,7 @@ const ShopPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#0E1C3D] mb-8">
-              TRICAST360<sup>®</sup> Shop
+              TRICAST360<sup className="-mt-2">®</sup> Shop
             </h1>
             <p className="text-xl lg:text-2xl text-[#0E1C3D]/80 max-w-4xl mx-auto mb-12">
               Stellen Sie Ihr individuelles Baumschutzsystem zusammen und erhalten Sie sofort ein Angebot.
@@ -918,7 +918,7 @@ const ShopPage = () => {
 
           <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-white/60 text-sm">
-              &copy; {new Date().getFullYear()} TRICAST360<sup>®</sup>. Alle Rechte vorbehalten.
+              &copy; {new Date().getFullYear()} TRICAST360<sup className="-mt-2">®</sup>. Alle Rechte vorbehalten.
             </p>
           </div>
         </div>
