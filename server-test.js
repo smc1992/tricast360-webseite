@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 4000; // Hardcoded für Test
+const PORT = 3000; // Coolify erwartet Port 3000
 
 console.log('🧪 Minimal Test Server starting...');
 
