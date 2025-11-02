@@ -1,18 +1,15 @@
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = 4000; // Hardcoded für Test
 
-console.log('🚀 Starting TRICAST360 Server...');
-console.log('Environment:', process.env.NODE_ENV || 'development');
-console.log('Port:', PORT);
+console.log('🧪 Minimal Test Server starting...');
 
 // Basic health check
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'OK',
     timestamp: new Date().toISOString(),
-    env: process.env.NODE_ENV,
-    port: PORT
+    server: 'minimal-test'
   });
 });
 
@@ -21,9 +18,11 @@ app.use(express.static('out'));
 
 // SPA fallback
 app.get('*', (req, res) => {
-  res.sendFile(require('path').join(__dirname, 'out', 'index.html'));
+  const path = require('path');
+  res.sendFile(path.join(__dirname, 'out', 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ TRICAST360 Server running on port ${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`✅ Minimal Test Server running on port ${PORT}`);
+  console.log('🌐 Health check: /api/health');
 });
