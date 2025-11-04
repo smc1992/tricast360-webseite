@@ -1,6 +1,13 @@
 
 import { useEffect } from 'react';
 
+// Swiper Typendeklaration für TypeScript
+declare global {
+  interface Window {
+    Swiper: any;
+  }
+}
+
 export const HighlightsSection = () => {
   useEffect(() => {
     // Swiper initialisieren
@@ -37,11 +44,17 @@ export const HighlightsSection = () => {
 
   return (
     <section className="relative min-h-screen bg-white flex items-center justify-center py-16 lg:py-24 overflow-hidden">
-      {/* Animated background circles */}
+      {/* Animated background icons */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#baf742]/10 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-[#baf742]/5 rounded-full animate-bounce"></div>
-        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-[#baf742]/15 rounded-full animate-ping"></div>
+        <div className="absolute top-1/4 left-1/4">
+          <i className="ri-tools-line text-6xl text-[#baf742]/20"></i>
+        </div>
+        <div className="absolute bottom-1/4 right-1/4">
+          <i className="ri-time-line text-5xl text-[#baf742]/15"></i>
+        </div>
+        <div className="absolute top-1/2 right-1/3">
+          <i className="ri-leaf-line text-4xl text-[#baf742]/25"></i>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -78,51 +91,45 @@ export const HighlightsSection = () => {
             <div className="swiper-wrapper">
               {/* Card 1 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <img 
-                  className="absolute inset-0 w-full h-full object-cover object-top" 
-                  alt="Schnelle Installation"
-                  src="/Tricast360 Stadtbaustelle 2.webp"
-                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <i className="ri-tools-line text-8xl text-[#baf742]/50"></i>
+                </div>
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
-                    <i className="ri-time-line mr-1"></i>&lt;5 Min
+                    <i className="ri-tools-line mr-1"></i>Modular
                   </span>
                   <h3 className="absolute bottom-0 left-0 text-white font-semibold text-base lg:text-xl leading-relaxed m-4 lg:m-6">
-                    Blitzschnelle Installation
+                    Modulares System
                   </h3>
                 </div>
               </div>
 
               {/* Card 2 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <img 
-                  className="absolute inset-0 w-full h-full object-cover object-top" 
-                  alt="100% Nachhaltig"
-                  src="/Tricast360 Stadtbaustelle 3.webp"
-                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <i className="ri-time-line text-8xl text-[#baf742]/50"></i>
+                </div>
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
-                    <i className="ri-leaf-line mr-1"></i>100%
+                    <i className="ri-time-line mr-1"></i>&lt;5 Min
                   </span>
                   <h3 className="absolute bottom-0 left-0 text-white font-semibold text-base lg:text-xl leading-relaxed m-4 lg:m-6">
-                    Vollständig recycelbar
+                    Schnelle Installation
                   </h3>
                 </div>
               </div>
 
               {/* Card 3 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <img 
-                  className="absolute inset-0 w-full h-full object-cover object-top" 
-                  alt="500+ Projekte"
-                  src="/Tricast360 Stadtbaustelle 4.webp"
-                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <i className="ri-leaf-line text-8xl text-[#baf742]/50"></i>
+                </div>
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
-                    <i className="ri-building-line mr-1"></i>500+
+                    <i className="ri-leaf-line mr-1"></i>100%
                   </span>
                   <h3 className="absolute bottom-0 left-0 text-white font-semibold text-base lg:text-xl leading-relaxed m-4 lg:m-6">
-                    Bewährte Qualität
+                    100% Nachhaltigkeit
                   </h3>
                 </div>
               </div>

@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import HeroSection from './components/HeroSection';
 import HighlightsSection from './components/HighlightsSection';
-import { TechStackCanvas } from './components/TechStackAnimation';
 import { StatsCanvas } from './components/StatsAnimation';
 
 const HomePage = () => {
@@ -383,8 +382,8 @@ const HomePage = () => {
               }`}
               style={{ transitionDelay: '200ms' }}
             >
-              <div className="w-64 h-64 mx-auto mb-6">
-                <TechStackCanvas type="modular" />
+              <div className="w-64 h-64 mx-auto mb-6 flex items-center justify-center">
+                <i className="ri-tools-line text-9xl text-[#baf742]"></i>
               </div>
               <h3 className="text-2xl font-semibold text-[#0E1C3D] mb-3 text-center group-hover:text-[#baf742] transition-colors">Modulares System</h3>
               <p className="text-[#0E1C3D]/60 text-center leading-relaxed">
@@ -401,8 +400,8 @@ const HomePage = () => {
               }`}
               style={{ transitionDelay: '400ms' }}
             >
-              <div className="w-64 h-64 mx-auto mb-6">
-                <TechStackCanvas type="quick" />
+              <div className="w-64 h-64 mx-auto mb-6 flex items-center justify-center">
+                <i className="ri-time-line text-9xl text-[#baf742]"></i>
               </div>
               <h3 className="text-2xl font-semibold text-[#0E1C3D] mb-3 text-center group-hover:text-[#baf742] transition-colors">Schnelle Installation</h3>
               <p className="text-[#0E1C3D]/60 text-center leading-relaxed">
@@ -419,8 +418,8 @@ const HomePage = () => {
               }`}
               style={{ transitionDelay: '600ms' }}
             >
-              <div className="w-64 h-64 mx-auto mb-6">
-                <TechStackCanvas type="sustainable" />
+              <div className="w-64 h-64 mx-auto mb-6 flex items-center justify-center">
+                <i className="ri-leaf-line text-9xl text-[#baf742]"></i>
               </div>
               <h3 className="text-2xl font-semibold text-[#0E1C3D] mb-3 text-center group-hover:text-[#baf742] transition-colors">100% Nachhaltig</h3>
               <p className="text-[#0E1C3D]/60 text-center leading-relaxed">

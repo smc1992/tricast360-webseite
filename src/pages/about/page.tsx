@@ -448,7 +448,7 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <img
-                src="/tricast 360 baumschutzmodul baustelle 2.webp"
+                src="/Tricast360 Stadtbaustelle 3.webp"
                 alt="TriCast360 Mission"
                 className="rounded-3xl shadow-2xl object-cover w-full h-[700px] border border-[#baf742]/10"
               />

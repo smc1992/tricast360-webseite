@@ -2,6 +2,66 @@
 import React, { useState, useRef, Suspense } from 'react';
 import ThreeJsHero from '../../../components/ThreeJsHero';
 
+function TypewriterH1() {
+  const [displayText, setDisplayText] = useState('');
+  const [currentPhase, setCurrentPhase] = useState<'typing1' | 'typing2' | 'pause'>('typing1');
+  const [charIndex, setCharIndex] = useState(0);
+
+  const text1 = 'SCHÜTZT BÄUME';
+  const text2 = 'SCHÜTZT WERTE';
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      if (currentPhase === 'typing1') {
+        if (charIndex < text1.length) {
+          setDisplayText(text1.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else {
+          // Erste Zeile fertig, starte zweite Zeile
+          setCurrentPhase('typing2');
+          setCharIndex(0);
+        }
+      } else if (currentPhase === 'typing2') {
+        if (charIndex < text2.length) {
+          setDisplayText(text1 + '\n' + text2.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else {
+          // Beide Zeilen fertig, Pause vor Neustart
+          setCurrentPhase('pause');
+        }
+      } else if (currentPhase === 'pause') {
+        // Nach 2 Sekunden Pause von vorne beginnen
+        setTimeout(() => {
+          setDisplayText('');
+          setCharIndex(0);
+          setCurrentPhase('typing1');
+        }, 2000);
+      }
+    }, currentPhase === 'pause' ? 0 : 100); // 100ms pro Buchstabe für smoother Effekt
+
+    return () => clearTimeout(timer);
+  }, [charIndex, currentPhase]);
+
+  return (
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300 text-center">
+      {displayText.split('\n').map((line, index) => (
+        <div key={index} className={index === 0 ? '' : 'mt-4'}>
+          {line.split(' ').map((word, wordIndex) => {
+            if (word === 'BÄUME' || word === 'WERTE') {
+              return (
+                <span key={wordIndex} className="text-[#baf742]">
+                  {word}{' '}
+                </span>
+              );
+            }
+            return word + ' ';
+          })}
+        </div>
+      ))}
+    </h1>
+  );
+}
+
 export default function HeroSection() {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
@@ -69,13 +129,9 @@ export default function HeroSection() {
           <div className="relative mb-8 animate-fade-in-up" style={{ animationDelay: '0.4s', height: '200px', width: '100%' }}>
             <Suspense fallback={
               <div className="flex flex-col items-center justify-center h-full space-y-4">
-                {/* Single line with floating animation */}
+                {/* Typewriter effect even in fallback */}
                 <div className="animate-pulse-slow">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-tight drop-shadow-2xl hover:scale-105 transition-transform duration-300">
-                    <span className="drop-shadow-lg">
-                      SCHÜTZT <span className="text-[#baf742]">BÄUME</span>, SCHÜTZT <span className="text-[#baf742]">WERTE</span>
-                    </span>
-                  </h1>
+                  <TypewriterH1 />
                 </div>
               </div>
             }>
@@ -85,7 +141,8 @@ export default function HeroSection() {
 
           {/* Description */}
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-12 animate-fade-in-up drop-shadow-lg" style={{ animationDelay: '0.6s' }}>
-            Revolutionärer 360°-Schutz für Bäume auf Baustellen. Werkzeuglos, wiederverwendbar und DIN-konform.
+            Innovatives Baumschutzsystem.<br />
+            Werkzeuglos, wiederverwendbar und DIN-konform.
           </p>
 
           {/* CTA Buttons */}

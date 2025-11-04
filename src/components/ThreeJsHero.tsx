@@ -1,45 +1,59 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Text, Center, Float } from '@react-three/drei';
 import * as THREE from 'three';
 
-interface AnimatedTextProps {
-  text: string;
+interface TypewriterTextProps {
   position: [number, number, number];
   fontSize?: number;
-  color?: string;
-  delay?: number;
 }
 
-function AnimatedText({ text, position, fontSize = 1, color = '#ffffff', delay = 0 }: AnimatedTextProps) {
+function TypewriterText({ position, fontSize = 1 }: TypewriterTextProps) {
   const textRef = useRef<THREE.Mesh>(null);
-  const [visible, setVisible] = useState(false);
+  const [displayText, setDisplayText] = useState('');
+  const [currentPhase, setCurrentPhase] = useState<'typing1' | 'typing2' | 'pause'>('typing1');
+  const [charIndex, setCharIndex] = useState(0);
   const { viewport } = useThree();
+
+  const text1 = 'SCHÜTZT BÄUME';
+  const text2 = 'SCHÜTZT WERTE';
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setVisible(true);
-    }, delay * 1000);
+      if (currentPhase === 'typing1') {
+        if (charIndex < text1.length) {
+          setDisplayText(text1.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else {
+          // Erste Zeile fertig, starte zweite Zeile
+          setCurrentPhase('typing2');
+          setCharIndex(0);
+        }
+      } else if (currentPhase === 'typing2') {
+        if (charIndex < text2.length) {
+          setDisplayText(text1 + '\n' + text2.substring(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else {
+          // Beide Zeilen fertig, Pause vor Neustart
+          setCurrentPhase('pause');
+        }
+      } else if (currentPhase === 'pause') {
+        // Nach 2 Sekunden Pause von vorne beginnen
+        setTimeout(() => {
+          setDisplayText('');
+          setCharIndex(0);
+          setCurrentPhase('typing1');
+        }, 2000);
+      }
+    }, currentPhase === 'pause' ? 0 : 100); // 100ms pro Buchstabe für smoother Effekt
+
     return () => clearTimeout(timer);
-  }, [delay]);
+  }, [charIndex, currentPhase]);
 
   useFrame((state) => {
-    if (textRef.current && visible) {
+    if (textRef.current) {
       // Subtle floating animation
-      textRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 0.5 + delay) * 0.03;
-      // Gentle rotation
-      textRef.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.3 + delay) * 0.01;
-
-      // Fade in animation
-      const material = textRef.current.material as THREE.MeshStandardMaterial;
-      if (material) {
-        const elapsed = state.clock.elapsedTime - delay;
-        if (elapsed > 0 && elapsed < 1) {
-          material.opacity = elapsed;
-        } else if (elapsed >= 1) {
-          material.opacity = 1;
-        }
-      }
+      textRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 0.5) * 0.03;
     }
   });
 
@@ -52,17 +66,33 @@ function AnimatedText({ text, position, fontSize = 1, color = '#ffffff', delay =
           ref={textRef}
           font="/fonts/helvetiker_regular.typeface.json"
           fontSize={responsiveFontSize}
-          color={color}
+          color="#ffffff"
           anchorX="center"
           anchorY="middle"
           maxWidth={viewport.width * 0.8}
+          textAlign="center"
+          lineHeight={1.2}
         >
-          {text}
+          {displayText.split('\n').map((line, index) => (
+            <span key={index}>
+              {line.split(' ').map((word, wordIndex) => {
+                if (word === 'BÄUME' || word === 'WERTE') {
+                  return (
+                    <span key={wordIndex} style={{ color: '#baf742' }}>
+                      {word}{' '}
+                    </span>
+                  );
+                }
+                return word + ' ';
+              })}
+              {index === 0 && displayText.includes('\n') ? '\n' : ''}
+            </span>
+          ))}
           <meshStandardMaterial
-            color={color}
+            color="#ffffff"
             transparent
-            opacity={visible ? 1 : 0}
-            emissive={color}
+            opacity={1}
+            emissive="#ffffff"
             emissiveIntensity={0.1}
           />
         </Text>
@@ -121,13 +151,10 @@ function Scene() {
       {/* Animated background particles - disabled */}
       <Particles />
 
-      {/* First line: SCHÜTZT BÄUME, SCHÜTZT WERTE */}
-      <AnimatedText
-        text="SCHÜTZT BÄUME, SCHÜTZT WERTE"
+      {/* Typewriter effect: SCHÜTZT BÄUME, SCHÜTZT WERTE */}
+      <TypewriterText
         position={[0, 0, 0]}
         fontSize={1.2}
-        color="#ffffff"
-        delay={0.2}
       />
     </>
   );
