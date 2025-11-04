@@ -394,7 +394,7 @@ const AboutPage = () => {
               </div>
               <div className="space-y-10 text-[#0E1C3D]/80 text-xl leading-relaxed">
                 <p className="text-2xl">
-                  Bei TriCast360 entwickeln wir innovative Baumschutzsysteme, die Nachhaltigkeit und Effizienz perfekt vereinen. Unser revolutionäres 360°-Schutzsystem ermöglicht es, Bäume während Bauprojekten optimal zu schützen.
+                  Bei TRICAST360 entwickeln wir innovative Baumschutzsysteme, die Nachhaltigkeit und Effizienz perfekt vereinen. Unser revolutionäres 360°-Schutzsystem ermöglicht es, Bäume während Bauprojekten optimal zu schützen.
                 </p>
                 <p className="text-xl">
                   Wir glauben daran, dass Umweltschutz und wirtschaftlicher Erfolg Hand in Hand gehen können. Deshalb haben wir ein System entwickelt, das nicht nur die Umwelt schont, sondern auch Kosten spart.
@@ -661,7 +661,10 @@ const AboutPage = () => {
                   2024 – Das Jahr, in dem eine Vision Realität wurde. Als wir sahen, wie ineffizient und umweltschädlich herkömmlicher Baumschutz war, wussten wir: Es muss einen besseren Weg geben.
                 </p>
                 <p className="text-xl">
-                  Heute entwickeln wir als jugendliches, dynamisches Startup die nächste Generation von Baumschutzsystemen – modular, nachhaltig und wirtschaftlich.
+                  Heute entwickeln wir als jugendliches, dynamisches Startup die nächste Generation von Baumschutzsystemen – modular, nachhaltig und wirtschaftlich. Unser revolutionäres 360°-Schutzsystem ermöglicht es, Bäume während Bauprojekten optimal zu schützen.
+                </p>
+                <p className="text-xl">
+                  Wir glauben daran, dass Umweltschutz und wirtschaftlicher Erfolg Hand in Hand gehen können. Deshalb haben wir ein System entwickelt, das nicht nur die Umwelt schont, sondern auch Kosten spart.
                 </p>
               </div>
 
@@ -669,7 +672,7 @@ const AboutPage = () => {
 
             <div className="relative">
               <img 
-                src="/tricast 360 baumschutzmodul baustelle 3.webp"
+                src="/Tricast360 Projekt Stadtmitte.webp"
                 alt="Unsere Story"
                 className="rounded-3xl shadow-2xl object-cover w-full h-[600px] border border-[#baf742]/10"
               />

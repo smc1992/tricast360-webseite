@@ -91,9 +91,11 @@ export const HighlightsSection = () => {
             <div className="swiper-wrapper">
               {/* Card 1 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <i className="ri-tools-line text-8xl text-[#baf742]/50"></i>
-                </div>
+                <img 
+                  className="absolute inset-0 w-full h-full object-cover object-[center_-20%]" 
+                  alt="Modulares System"
+                  src="/Tricast360 Stadtbaustelle 2.webp"
+                />
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
                     <i className="ri-tools-line mr-1"></i>Modular
@@ -106,9 +108,11 @@ export const HighlightsSection = () => {
 
               {/* Card 2 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <i className="ri-time-line text-8xl text-[#baf742]/50"></i>
-                </div>
+                <img 
+                  className="absolute inset-0 w-full h-full object-cover object-[center_-20%]" 
+                  alt="Schnelle Installation"
+                  src="/Tricast360 Stadtbaustelle 3.webp"
+                />
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
                     <i className="ri-time-line mr-1"></i>&lt;5 Min
@@ -121,9 +125,11 @@ export const HighlightsSection = () => {
 
               {/* Card 3 */}
               <div className="swiper-slide relative shadow-[0_15px_50px_rgba(0,0,0,0.2)] rounded-[10px] select-none">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <i className="ri-leaf-line text-8xl text-[#baf742]/50"></i>
-                </div>
+                <img 
+                  className="absolute inset-0 w-full h-full object-cover object-[center_-20%]" 
+                  alt="100% Nachhaltigkeit"
+                  src="/Tricast360 Stadtbaustelle 4.webp"
+                />
                 <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-[#0a0c14] via-transparent to-transparent">
                   <span className="absolute top-0 right-0 text-white py-2 px-3 lg:px-4 m-3 lg:m-4 rounded-[20px] tracking-[2px] text-xs lg:text-sm font-bold bg-[#baf742]/20 shadow-[inset_2px_-2px_20px_rgba(186,247,66,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px]">
                     <i className="ri-leaf-line mr-1"></i>100%

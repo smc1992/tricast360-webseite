@@ -469,7 +469,7 @@ const ContactPage = () => {
                 <i className="ri-mail-line text-[#0a0c14] text-4xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-semibold text-[#0E1C3D] mb-6">E-Mail</h3>
-              <p className="text-xl sm:text-2xl font-bold text-[#0E1C3D] mb-4">info@TRICAST360.de</p>
+              <p className="text-xl sm:text-2xl font-bold text-[#0E1C3D] mb-4">info@tricast360.de</p>
               <p className="text-lg sm:text-xl text-[#0E1C3D]/70">Antwort binnen 24h</p>
             </div>
 
